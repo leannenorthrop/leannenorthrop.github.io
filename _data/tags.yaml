@@ -4,3 +4,7 @@
   name: Learning Scala
 - slug: swift
   name: Swift
+- slug: sbt
+  name: Scala Build Tool
+- slug: scala_docs
+  name: Scala Documentation  

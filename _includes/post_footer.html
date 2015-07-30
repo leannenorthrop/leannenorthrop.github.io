@@ -1,19 +1,15 @@
           </div><!-- /.blog-post -->
-
-          <nav>
-            <ul class="pager">
-            {% if page.previous %}
-              <li><a href="{{page.previous.url}}">Previous</a></li>
-            {% endif %}
-            {% if page.next %}
-              <li><a href="{{page.next.url}}">Next</a></li>
-            {% endif %}
-            </ul>
-          </nav>
-
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module">
+          {% if page.previous %}
+            <a href="{{page.previous.url}}">Previous</a>
+          {% endif %}
+          {% if page.next %}
+            <a href="{{page.next.url}}">Next</a>
+          {% endif %}
+          </div>
           <div class="sidebar-module sidebar-module-inset">
             <h4>About</h4>
             <img src="https://avatars0.githubusercontent.com/u/521090?v=3&s=460" width="50px" height:"50px"></img>
@@ -48,4 +44,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{site.url}}/javascripts/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{site.url}}/javascripts/ie10-viewport-bug-workaround.js"></script>       
+    <script src="{{site.url}}/javascripts/ie10-viewport-bug-workaround.js"></script>  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>    
