@@ -4,10 +4,10 @@
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module">
           {% if page.previous %}
-            <a href="{{page.previous.url}}">Previous</a>
+            Previous: <a href="{{page.previous.url}}">{{page.previous.title}}</a><br/>
           {% endif %}
           {% if page.next %}
-            <a href="{{page.next.url}}">Next</a>
+            Next: <a href="{{page.next.url}}">{{page.next.title}}</a>
           {% endif %}
           </div>
           <div class="sidebar-module sidebar-module-inset">
