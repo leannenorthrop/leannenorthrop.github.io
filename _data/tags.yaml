@@ -8,3 +8,5 @@
   name: Scala Build Tool
 - slug: scala_docs
   name: Scala Documentation  
+- slug: sublime
+  name: Sublime
