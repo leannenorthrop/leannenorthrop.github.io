@@ -6,6 +6,7 @@ tags: [scala, learning_scala, functions]
 Scala has support for functions as first-class values in that functions can be assigned to variables, and passed and returned from other functions.
 
 <pre><code style="scala">//Scala
+// Function Literal
 val myFunction = (s:String) => s.toUpperCase()
 
 // Call myFunction and print result
@@ -29,6 +30,36 @@ println(result3) // Prints: List(PEAR, APPLE, BANNANA)
 </code></pre>
 
 When a function like `map` takes a function as a parameter it is called a higher-order function. When the return type is Unit (Scala equivalent to Java's void) the function is not pure but instead only causes side-effects.
+
+## Nested Functions
+
+<pre><code class="scala">object Math {
+	def !(i:Int):Long = {
+		def factorial(i:Int, acc:Int):Long = {
+			if (i <= 1) acc
+			else factorial(i-1, i * acc)
+		}
+		factorial(i,1)
+	}
+}
+println(Math ! 4) // Prints: 24
+</code></pre>
+
+### Tail Recursion 
+To ensure that Scala compiler implements tail-call optimisation use the `@tailrec` annotation which will cause the compiler to print a warning if there is an error. This will prevent stack overflow.
+
+<pre><code class="scala">object Math {
+	def !(i:Int):Long = {
+		@tailrec
+		def factorial(i:Int, acc:Int):Long = {
+			if (i <= 1) acc
+			else factorial(i-1, i * acc)
+		}
+		factorial(i,1)
+	}
+}
+println(Math ! 4) // Prints: 24
+</code></pre>
 
 ## Partial Functions
 Not to be confused with partially applied functions, partial functions are those which implement functionality for only a specific sub-group of the input. Only `case` clauses are allowed and must be contained within a pair of curly braces. In Scala it must take a single parameter and can take a literal form:

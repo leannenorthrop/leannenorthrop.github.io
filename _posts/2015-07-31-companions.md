@@ -18,7 +18,7 @@ case class Apple() extends StoreProduct("Apple")
 case class Bannana() extends StoreProduct("Bannana")
 </code></pre>
 
-The `case` keyword causes the compiler to also generate useful methods such as equals, hashCode on the class and also a 'companion' singleton object e.g.
+The `case` keyword causes the compiler to also generate useful methods such as toString, equals, hashCode and copy on the class (which can take one or more parameters by name to change values during the copy) and also a 'companion' singleton object e.g.
 
 <pre><code class="scala">object Pear {
 	...
@@ -59,3 +59,17 @@ val pair1 = Pair(1,3)
 val tuple : Option[(Int)] = PairHelper.unapply(pair1)
 println(tuple) // Prints: Some((1))
 </code></pre>
+
+# Simulating a new keyword
+Using the apply method is useful for creating a new keyword that operates over some block:
+
+<pre><code class="scala">object hello {
+	def apply(doSomeWork: String => String) : String = {
+		doSomeWork("hello")
+	}
+}
+
+val result = hello { s =>
+	val length = s.length
+	s"$s has $length characters".toUpperCase
+}</code></pre>
