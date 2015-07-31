@@ -10,3 +10,11 @@
   name: Scala Documentation  
 - slug: sublime
   name: Sublime
+- slug: script
+  name: Script  
+- slug: tool
+  name: Tool  
+- slug: generics
+  name: Generics/Parameterized Types
+- slug: functions
+  name: Functions

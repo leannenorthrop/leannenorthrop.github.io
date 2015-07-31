@@ -73,6 +73,12 @@ header h2 {
   color: #aaa;
   letter-spacing: -1px;
 }
+
+.blog-footer,
+.blog-sidebar {
+  display:none;
+}
+
 #downloads {
   display: none;
 }

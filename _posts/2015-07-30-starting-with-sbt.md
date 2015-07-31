@@ -31,7 +31,7 @@ libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % "2.3.12"
 
 As your project grows you may wish to add one or more [plugins](http://www.scala-sbt.org/0.13/tutorial/Using-Plugins.html) but more on that another time as this is enough SBT setup for learning Scala via sbt console.
 
-<h2>SBT Scala Console</h2>
+## SBT Scala Console
 Just typing `sbt` command into the command prompt in your root directory will begin a SBT session which offers a range of commands. Type `help` to see the list of commands and `exit` to return to the command prompt. One very useful command is the `console` command which starts a Scala session which can be used to try out different Scala expressions or snippets of code. 
 
 Although IDE's such as IntelliJ offer [worksheet functionality](https://confluence.jetbrains.com/display/IntelliJIDEA/Working+with+Scala+Worksheet) I enjoy using a Max OSX terminal session side-by-side with Sublime as I'm currently working on an older lap-top without much horse-power. Scripts can be loaded into the SBT Scala console using the load command e.g. `:load dir/to/script.sc`. 

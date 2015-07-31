@@ -45,6 +45,9 @@
   font-weight: 500;
   color: #cdddeb;
 }
+.blog-nav-right {
+	float:right;
+}
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
