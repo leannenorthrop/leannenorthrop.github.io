@@ -131,6 +131,8 @@ val myClass = new MyClass(1)
 println(myClass.doSomethingToStrings("a", "b", "c"))
 // Prints: Hello a b c</code></pre>
 
+The :_* is used instead of * to convert the list of parameters into a sequence.
+
 ### Multiple Argument Lists
 Scala supports multiple argument lists and are useful when the last argument list takes a single function parameter:
 
