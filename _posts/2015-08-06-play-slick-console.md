@@ -6,8 +6,7 @@ tags: [scala, play_2_4, slick_3_0]
 
 The Getting Started documentation for both Play 2.4 and Slick 3.0 unfortunately have a few errors in the code examples making it a bit of a nightmare for a Play/Slick newbie. After hunting around I've discovered to start play in a console the start code is now `play.core.server.ProdServerStart.main(Array())`. So to use Play 2.4 interactively:
 
-```
-$ activator
+<pre><code class="bash">$ activator
 [info] Loading project definition from ...
 [info] Set current project to play-slick
 [play-slick] $ console
@@ -23,12 +22,11 @@ scala> play.core.server.ProdServerStart.main(Array())
 [info] - play.core.server.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
 scala>
-```
+</code></pre>
 
 If your project is configured with Slick 3.0 to load up Slick driver use `:paste` mode:
 
-```
-scala> :paste
+<pre><code class="bash">scala> :paste
 // Entering paste mode (ctrl-D to finish)
 
 import play.api.db.slick.DatabaseConfigProvider
@@ -37,12 +35,11 @@ import scala.language.existentials
 val dbConfig = DatabaseConfigProvider.get[JdbcProfile](play.api.Play.current)
 import dbConfig.driver.api._
 val db = dbConfig.db
-```
+</code></pre>
 
 Slick can now be used:
 
-```
-scala> :paste
+<pre><code class="bash">scala> :paste
 // Entering paste mode (ctrl-D to finish)
 
  case class AccumulationRow(
@@ -72,4 +69,4 @@ scala> :paste
   import models.daos._
   val q = slickAccumulations.length
   Await.result(db.run(q.result), Duration(1000, MILLISECONDS))
-```
+</code></pre>
