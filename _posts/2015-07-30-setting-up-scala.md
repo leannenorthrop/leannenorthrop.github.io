@@ -2,6 +2,7 @@
 layout: post
 title: Setting Up Scala Environment
 tags: [learning_scala,sbt,scala_docs]
+blogpost: true
 ---
 Although Typesafe's Activator tool has been developed to ease the pain of starting Scala projects I unfortunately started using it on a day when a central library repository was down and the majority of the templates intermittently failed to compile and run. In sheer frustration I tried searching for other information on basic set-up but found I was installing tool after tool, so for the records a really simple, straight-forward set-up consists of:
 

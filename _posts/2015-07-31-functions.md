@@ -2,6 +2,7 @@
 layout: post
 title: Functions ~ The Basics
 tags: [scala, learning_scala, functions]
+blogpost: true
 ---
 Scala has support for functions as first-class values in that functions can be assigned to variables, and passed and returned from other functions.
 

@@ -2,6 +2,7 @@
 layout: post
 title: Starting a Play Console to Work with Slick 3.0
 tags: [scala, play_2_4, slick_3_0]
+blogpost: true
 ---
 
 The Getting Started documentation for both Play 2.4 and Slick 3.0 unfortunately have a few errors in the code examples making it a bit of a nightmare for a Play/Slick newbie. After hunting around I've discovered to start play in a console the start code is now `play.core.server.ProdServerStart.main(Array())`. So to use Play 2.4 interactively:

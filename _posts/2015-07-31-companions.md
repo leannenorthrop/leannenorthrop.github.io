@@ -2,6 +2,7 @@
 layout: post
 title: Scala Case Classes &amp; Companions
 tags: [scala, learning_scala]
+blogpost: true
 ---
 Simple data only classes like the Java Data Transfer Objects can be represented in Scala using a simplified class declaration using the keyword `case`. Each parameter to the primary constructor is treated as a read-only value (unless marked with the `var` keyword) with a private final field and accessor method generated for each by the compiler.
 

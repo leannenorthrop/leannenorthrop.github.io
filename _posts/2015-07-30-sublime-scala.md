@@ -2,6 +2,7 @@
 layout: post
 title: Sublime Scala
 tags: [learning_scala,sublime]
+blogpost: true
 ---
 Yes, Scala is sublime for many users but in this post I wanted to document how to set up one of my favourite text editor, Sublime, in a simple way for learning Scala and leave an in-depth discussion on the merits of Scala to another time :-)
 

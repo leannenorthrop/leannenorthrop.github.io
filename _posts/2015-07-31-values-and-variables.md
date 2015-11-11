@@ -2,6 +2,7 @@
 layout: post
 title: Values &amp; Variables &amp; All the Rest
 tags: [scala, learning_scala]
+blogpost: true
 ---
 Scala differs from Java when declaring variables:
 

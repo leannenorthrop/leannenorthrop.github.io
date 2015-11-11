@@ -2,6 +2,7 @@
 layout: post
 title: Scala Classes ~ The Basics
 tags: [scala, learning_scala]
+blogpost: true
 ---
 Scala differs from Java in that the entire body of the class between the curly braces is considered part of a primary constructor, where the arguments to the constructor are given immediately after the class name. Methods are defined using the `def` keyword and the last expression of the method is used as the return value.
 

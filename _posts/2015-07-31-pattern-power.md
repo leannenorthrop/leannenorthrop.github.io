@@ -2,6 +2,7 @@
 layout: post
 title: Pattern Power
 tags: [scala, learning_scala]
+blogpost: true
 ---
 Instead of Java's switch statement Scala introduces a `match` expression which supports in-depth matching on an object's state or even simple expressions and returns the evaluated expression for the matching case. It looks fairly similar to switch blocks with `case` expressions but `break` is not required as there is no fall-through to the next case. The case block can contain case expressions operating over different types which straight-away gives a feeling of more expressive power to code than Java's switch.
 

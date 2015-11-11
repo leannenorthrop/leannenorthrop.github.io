@@ -1,24 +1,7 @@
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item" href="/">Home</a>
-          <a class="blog-nav-item active" href="/blog">Blog</a>
-          <span class="blog-nav-right">
-          {% if page.previous %}
-            <a class="blog-nav-item" href="{{page.previous.url}}" data-toggle="tooltip" data-placement="bottom" title="{{page.previous.title}}"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</a>
-          {% endif %}
-          {% if page.next %}
-            <a class="blog-nav-item" href="{{page.next.url}}" data-toggle="tooltip" data-placement="bottom" title="{{page.next.title}}">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-          {% endif %}          
-          </span>
-        </nav>
-      </div>
-    </div>
-
     <div class="container">
 
-      <div class="blog-header">
-        <h1 class="blog-title">{{page.title}}</h1>
+      <div class="page-header">
+        <h1>{{page.title}}</h1>
 {% assign post = page %}
 {% if post.tags.size > 0 %}
     {% capture tags_content %}Tags {% if post.tags.size == 1 %}<i></i>{% else %}<i></i>{% endif %}: {% endcapture %}
@@ -36,9 +19,9 @@
 {% else %}
     {% assign tags_content = '' %}
 {% endif %}          
-        <p class="lead blog-description">{{page.date|date_to_long_string}} <small>{{ tags_content }}</small></p>
+        <p class="lead">{{page.date|date_to_long_string}} <small>{{ tags_content }}</small></p>
       </div>
 
       <div class="row">
-        <div class="col-sm-8 blog-main">
-          <div class="blog-post">    
+        <div class="col-xs-12 col-sm-8">
+          <div class="">    

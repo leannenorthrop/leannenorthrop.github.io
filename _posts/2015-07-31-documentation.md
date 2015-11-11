@@ -2,6 +2,7 @@
 layout: post
 title: Comments &amp; Documentation
 tags: [scala, learning_scala, scala_docs]
+blogpost: true
 ---
 Comments in Scala follow the same convention as Java:
 

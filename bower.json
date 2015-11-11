@@ -1,0 +1,27 @@
+{
+  "name": "leannenorthrop.github.io",
+  "description": "Main github pages site for Leanne Northrop",
+  "main": "main.js",
+  "authors": [
+    "Leanne Northrop"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "leanne",
+    "northrop",
+    "development",
+    "blog",
+    "tibetan",
+    "wylie"
+  ],
+  "homepage": "https://github.com/leannenorthrop/leannenorthrop.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

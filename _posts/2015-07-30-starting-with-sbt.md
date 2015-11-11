@@ -2,6 +2,7 @@
 layout: post
 title: Starting Simply With SBT (Scala Build Tool) and Scala Console
 tags: [learning_scala,sbt]
+blogpost: true
 ---
 Understanding Scala Build Tool, or SBT, is quite straight-forward coming from Java's build tool Maven as it is able to leverage Maven repositories directly via Ivy, has plugins and multi-project builds etc. but also offers a range of new options such as run tests automatically on source file changes. 
 

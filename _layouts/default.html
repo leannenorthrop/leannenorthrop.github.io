@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,8 +5,24 @@
   </head>
 
   <body>
-  {% include header.html %}
+  {% include nav.html %}
+
+  {% if page.blogarchive %}
+  {%   include blog_header2.html %}
+  {% elsif page.blog %}
+  {%   include blog_header.html %}
+  {% elsif page.justnav %}
+  {% else %}
+  {%   include header.html %}
+  {% endif %}  
+
   {{ content }}
+
+  {% if page.justnav %}
+  {% else %}
+  {%   include foot.html %}
+  {% endif %}
+
   {% include footer.html %}
   </body>
 </html>

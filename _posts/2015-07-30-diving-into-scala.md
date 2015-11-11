@@ -2,6 +2,7 @@
 layout: post
 title: Diving into Scala ~ Why Scala?
 tags: [scala, learning_scala, swift]
+blogpost: true
 ---
 After getting excited by Apple's new language Swift I thought I'd delve into the Swift 1.2/iOS world and functional programming by working through "[Functional Programming in Scala](http://www.amazon.co.uk/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653)" by Paul Chiusano, Rúnar Bjarnason, followed by [Programming iOS 8](http://www.amazon.co.uk/Programming-iOS-Views-Controllers-Frameworks/dp/1491908734). Translating the Scala listings and exercises from the 'red book' to Swift was pretty straight-forward and gave me an appreciation of the similiarities between the two languages, which you can see in my [func_book_exercises repo](https://github.com/leannenorthrop/func_book_exercises).
 

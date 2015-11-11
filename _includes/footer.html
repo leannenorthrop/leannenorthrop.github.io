@@ -1,15 +1,39 @@
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Blog by <a href="https://twitter.com/flowerdew">Leanne Northrop</a> hosted on GitHub and built using <a href="http://getbootstrap.com">Bootstrap's</a> <a href="http://getbootstrap.com/examples/blog/">Blog Template</a>.</p>
-      <p>Many thanks to Minddust for great <a href="http://www.minddust.com/post/tags-and-categories-on-github-pages/">tutorial</a> on using tags on GitHub Pages.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-xs-6 col-sm-3">
+                    <h5>About</h5>
+                    <p>Blog by me, <a href="https://twitter.com/flowerdew">Leanne Northrop</a> hosted on my <a href="https://github.com/leannenorthrop">GitHub</a> account and built using <a href="http://getbootstrap.com">Bootstrap 3</a>, JQuery and Highlight.</p>
+                    <p>Many thanks to Minddust for great <a href="http://www.minddust.com/post/tags-and-categories-on-github-pages/">tutorial</a> on using tags on GitHub Pages.</p>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <h5>My Address</h5>
+                    <address>
+                      Noth Shields &amp; Surrey<br>
+                      United Kingdom<br>
+                      <i class="fa fa-envelope"></i>: <a href="mailto:lavender.dawn@gmail.com">lavender.dawn@gmail.com</a>
+                   </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h5>Elsewhere</h5>
+                    <div class="nav navbar-nav">
+                        <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/118141190119843633496/posts">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/profile/view?id=AAkAAAe70qIBlTDA0luIQJbcZrqYHG6qjGoRMhk"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/flowerdew"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:lavender.dawn@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align="center">© Copyright 2015 Leanne Northrop</p>
+                    <p align="center"><a href="#">Back to top</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
-
+  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -19,4 +43,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{site.url}}/javascripts/ie10-viewport-bug-workaround.js"></script>
     <script src="{{site.url}}/javascripts/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+hljs.initHighlightingOnLoad();
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>   
