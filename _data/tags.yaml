@@ -21,4 +21,6 @@
 - slug: play_2_4
   name: Play 2.4
 - slug: slick_3_0
-  name: Slick 3.0    
+  name: Slick 3.0   
+- slug: web
+  name: Web

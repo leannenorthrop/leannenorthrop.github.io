@@ -1,0 +1,28 @@
+---
+layout: post
+title: Google Accelerated Mobile Pages ~ Nostalgia or Future?
+tags: [web]
+blogpost: true
+---
+Over the weekend I came across Google's new initative [AMP](https://www.ampproject.org) which endevours to make the mobile web browsing experience slicker with leaner pages and promising near instantaneous page availability if using the infant framework. Although I don't consider myself a web developer I was surprised to have that "we've been here before" feeling ~ a framework which simply enshrines principles that have been around for quite some time such as limited application of JavaScript to simply aid user experience, good CSS, optimized images etc.
+
+Now I'm the first to admit that browsing on non-desktop devices is frequently infrutiating, Amazon UK being a prime culprit, but to create a new framework altogether feels to me like the wrong approach. I understand the drive to return to non-javascript content rich pages, a kind of nostalgia for when content and sharing was king rather than the increasingly fragmented web experience of today where most areas are becoming walled-off in device applications only (a move I'm not overly fond of). In fact I remember the WWW without online shopping and extremely limited advertising (no need for funding through ads - just imagine &lt;sigh&gt;). Sites were content dense and for the most part interesting and definitely useful. It was infuriating at times to create good looking pages and when CSS came along it was a real joy. JavaScript also came along, applied to pages, "and the rest is history". Turning back the clock in this respect could be a good thing.
+
+So as this personal site is still in it's infancy I thought it would be worth some effort to switch over to use the new framework, try it out, and see if the promises are realised. As the documentation is clear it is in fact a quick process and only took less than a handful of hours to convert over to the new format.
+
+Writing sites sans-JavaScript is a real art form in itself and although I find it frustrating, particularly now seeing that it's such a staple in the web experience, it _is_ a discipline that is worth revisiting. There was a tremendous amount of inginuity involved in creating interesting static content pages before JavaScript really took off and it would be interesting to see that kind of experimenting again this time for the mobile platform. It also closes off some vulnerabilities, which still exist today, that I remember once caused an explosion of 'turn off JavaScript in the browser' which became prevalent for time.
+
+I am however more irritated with the 50k byte restriction on CSS and prohibition on linking to CSS resources. It is not CSS framework friendly and I for one lean on skills and knowledge of more design savvy developers that is embedded in CSS frameworks until I get time to build up a solid CSS/design skill set myself.
+
+This restriction effectively prohibits CSS frameworks (in full) and could return the web back to infuriatingly bland or extremly badly marked up content. I'm already disappointed by the Google Material design where suddenly the world on the web is boxes/cards/whatever that I find efficient but dull. To all but rip out CSS I think will dissuade users who are now used to image/design rich sites. 
+
+Now if it were mandatory to have CSS in the head for initial layout or to aid caching followed up by linked in CSS to give a richer experience I could understand. But if it's to drive up content only then it is attempting to turn mobile web pages into nothing but instantaneous page based 'tweets' or Reuters fast news feeds. Isn't the simply styled RSS feeds suitable for fast mobile browsing content feeds? 
+
+In many ways the CSS limitation by the framework seems to compel creation of dual mobile/desktop sites - a throwback if ever there was. Why go down this road again? It's odd too that a framework which prohibits JavaScript, in itself is a script called from head and only after it's done it's job turns the body opacity from 0 to 1 to allow the page to be viewed (what happened to viewing the page contents as it loads?). I find all this dancing around, creating new non-standard elements (and consequently harming accesibility if JS is disabled) to control the loading of resources a little too fancy. 
+
+Why not use other mechanisms to achieve the same purpose? I'm not saying it's a great solution but DOCTYPEs used to offer browser rendering hints. Surely it would be easier for everyone to stick with standard HTML with a new DOCTYPE which when viewed on a mobile browser would simply switch off javascript (if user opts for it) and lazy load resources?
+
+Although 33% of internet traffic is mobile based and would appreciate the speed I can imagine the blander pages not going down well. Of course Google's decision to change mobile page ranking due to use or otherwise of AMP will lead to, I suspect, a route simply for generating mobile landing pages which subsequently draw users into non-AMP richer areas. 
+
+Anyway for now I will stick with the AMP approach and see how it goes. It's good etiquitte to ensure the internet is accessible to those with poor mobile data speeds, limited bandwidth or restricted data tarrifs. However, how much I convert the other areas I'm planning for this site to AMP, for the moment, remains questionable as there are valid uses of limited JavaScript and CSS Animation for communicating meaning. I'm not sure I'm a fan of placing everything in click-to-play iframes to achieve the same effect. In short I question the dominance of mobile without rich user experience.
+
