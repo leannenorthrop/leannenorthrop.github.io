@@ -4,7 +4,7 @@ title: Bramble ~ Preparing an OS, Arch Linux ARM
 tags: [raspberry-pi, bramble, arm, archlinux]
 blogpost: true
 ---
-As I don't have a case to securely hold the bramble together at present I thought now would be a good time to prepare the OS image I would need on each node. My partner, who is curious about the topic, struck on a 'faster' Linux distribution built to run on the Broadcom ARM 7 processors on Raspberry Pi 2 models, [Arch Linux Arm](http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2]). It's a nice Linux distribution that takes me back to my first days of using Slackware Linux in the late '90's.
+As I don't have a case to securely hold the bramble together at present I thought now would be a good time to prepare the OS image I would need on each node. My partner, who is curious about the topic, struck on a 'faster' Linux distribution built to run on the Broadcom ARM 7 processors on Raspberry Pi 2 models, [Arch Linux Arm](http://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2]). It's a nice Linux distribution that takes me back to my first days of using Slackware Linux in the late '90's. Also as a nice addition it's a rolling update.
 
 Creating an image for my collection of class 10 SD cards on OSX El Capitan turned out to not be straight forward with little hurdles along the way. I started out by creating a Virtual Box Ubuntu VM so that I could work in a sandbox environment but sadly the SD card reader isn't exposed as a USB device to Virtual Box and so creating partitions wasn't possible. Using OSX's native Disk Utility also proved problematic as I could not use the Partition button on the SD Card Reader device. Not wanting to use OSX command line, the solution was to use a trial edition of [Parallels Desktop for Mac](http://www.parallels.com/uk/products/desktop/) which thankfully correctly shared the SD card. If I knew I was going to be using Parallels in anger then I would consider purchasing a copy.
 
@@ -22,14 +22,12 @@ If I had more time I would take time to configure all the network, user accounts
 
 To clone the SD I popped it into the SD card reader on my Mac and ran (don't run this on your computer unless you confirm that the SD card is definitely /dev/rdisk2 otherwise update to match your setup as you don't want to ruin your computer's hard drive):
 
-<pre><code>
-dd if=/dev/rdisk2 of=.arch-arm-linux.img bs=1m
+<pre><code class="hljs bash">dd <span class="hljs-keyword">if</span>=<span class="hljs-regexp">/dev/</span>rdisk2 <span class="hljs-keyword">of</span>=.arch-arm-linux.img bs=<span class="hljs-number">1</span>m
 </code></pre>
 
 This put a raw disk image file in the directory I was working from and it was a straight forward task to clone onto each of the remaining 5 cards using (again don't run this on your computer until you are sure that the SD card is mounted as /dev/rdisk2):
 
-<pre><code>
-dd bs=1m if=./arch-arm-linux.img of=/dev/rdisk2
+<pre><code class="hljs bash">dd bs=<span class="hljs-number">1</span>m <span class="hljs-keyword">if</span>=./arch-arm-linux.img <span class="hljs-keyword">of</span>=<span class="hljs-regexp">/dev/</span>rdisk2
 </code></pre>
 
 Popping the fresh cards into each of the PIs I'm eager to get a case together (and a network switch) so I can fire up the bramble...will have to exercise patience.
