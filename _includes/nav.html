@@ -1,11 +1,17 @@
     <h1 class="pageh1">Gathering Understanding</h1>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="navbar-header" style="width: 100px; display:inline-block;">
+          <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-toolbar" aria-expanded="false">
+            <span class="sr-only">View Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button-->
           <a class="navbar-brand" href="/"><amp-img src="https://avatars0.githubusercontent.com/u/521090?v=3&s=460" width="30px" height="30px" class="img-circle" alt="Picture of Me, Leanne Northrop"></a>
         </div>
 
-        <div class="collapse navbar-collapse" id="main-toolbar">
+        <div class="collapse navbar-collapse" id="main-toolbar" style="display:inline-block; margin-left: 150px; padding-top:0px;border:0px;">
           <ul class="nav navbar-nav">
             {% if page.sitehome %}
             <li class="active"><a href="{{site.baseurl}}">Home<span class="sr-only">(current)</span></a></li>
@@ -35,7 +41,6 @@
         </div>
       </div>
     </nav>
-
 
   {% if page.sitehome %}
     <ol class="breadcrumb">
