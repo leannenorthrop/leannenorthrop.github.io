@@ -24,3 +24,17 @@
   name: Slick 3.0   
 - slug: web
   name: Web
+- slug: bramble
+  name: Bramble
+- slug: raspberry-pi
+  name: Raspberry Pi
+- slug: arm
+  name: Arm
+- slug: archlinux
+  name: Arch Linux
+- slug: docker
+  name: Docker
+- slug: k8s
+  name: Kubernetes
+- slug: alpine
+  name: Alpine Linux

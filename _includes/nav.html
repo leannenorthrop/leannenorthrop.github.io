@@ -25,7 +25,12 @@
             <li><a href="{{site.baseurl}}/blog">Dev Musings</a></li>
             {% endif %}   
 
-            <li><a href="{{site.baseurl}}/css-playground">Graphics</a></li>
+            {% if page.projecthome %}
+            <li class="active"><a href="{{site.baseurl}}/projects/index.html">Projects<span class="sr-only">(current)</span></a></li>
+            {% else %}
+            <li><a href="{{site.baseurl}}/projects/index.html">Projects</a></li>
+            {% endif %}  
+            <!--li><a href="{{site.baseurl}}/css-playground">Graphics</a></li-->
           </ul>
         </div>
       </div>
@@ -50,6 +55,13 @@
     <ol class="breadcrumb">
       <li><a href="{{site.baseurl}}"><span class="fa fa-home" aria-hidden="true"></span> Home</a></li>
       <li>Development</li>
+    </ol>
+  {% endif %}  
+
+  {% if page.projecthome %}
+    <ol class="breadcrumb">
+      <li><a href="{{site.baseurl}}"><span class="fa fa-home" aria-hidden="true"></span> Home</a></li>
+      <li>Projects</li>
     </ol>
   {% endif %}  
 
