@@ -11,7 +11,7 @@ The bargin 8 port network switch for £8 arrived today along with my Mac etherne
 * 6 port USB charger with enough power to each port yet regulated power supply
 * 6 class 10 32GB SD cards
 * 6 cat 5e ethernet cables with snag protection
-* 1 8 port 100Mbs unmanaged network switch with power saving a spare slot for my laptop connection and a spare slot for chaining or another Pi. It's so small!
+* 1 100Mbs unmanaged 8 port network switch with power saving a spare slot for my laptop connection and a spare slot for chaining or another Pi. It's so small!
 
 <img class="img-responsive center-block" alt="Parts for Raspberry Pi Cluster" src="{{site.baseurl}}/images/brambleparts.JPG">
 
