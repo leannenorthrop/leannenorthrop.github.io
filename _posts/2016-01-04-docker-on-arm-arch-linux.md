@@ -18,7 +18,7 @@ Hunting around I came across [this bug report](https://github.com/docker/docker/
 
 <pre><code class="bash hljs">curl -L <span class="hljs-string">'https://github.com/armhf-docker-library/binaries/blob/master/docker-1.9.1?raw=true'</span> | sudo tee /usr/bin/docker &gt;/dev/null &amp;&amp; sudo chmod +x /usr/bin/docker</code></pre>
 
-This works a treat and now running `docker images` and other commands work nicely.
+After rebooting this works a treat and now running `docker images` and other commands work nicely.
 
 Next up was trying to run my first image. This too threw up errors and another day of trying to get to the bottom of things. I eventually found [this post](http://archlinuxarm.org/forum/viewtopic.php?t=9337&p=48702) and [this bug report](https://github.com/docker/docker/issues/16256) which indicated the latest systemd version was causing an issue with cgroups. The magic fix in this case was to use Docker's `--exec-opt` to set the cgroupdriver e.g.:
 
@@ -26,4 +26,6 @@ Next up was trying to run my first image. This too threw up errors and another d
 
 With this in place it was now possible to run up a busybox image on master-baker (my Raspberry Pi master node).
 
-Lastly I was tired of using sudo all the time to execute docker commands so reading through [this](http://askubuntu.com/questions/477551/how-can-i-use-docker-without-sudo) I executed `sudo gpasswd -a ${USER} docker`. Patience was definitely required to get this running. I initially thought it would only take a weekend to get a Raspberry Pi cluster up and running with Kubernetes on Docker but the OSX networking 'features' and docker issues have slowed me down considerably. However I'm pleased to say I finally got Kubernetes running succesfully on two nodes yesterday and I hope to post soon on that.
+Lastly I was tired of using sudo all the time to execute docker commands so reading through [this](http://askubuntu.com/questions/477551/how-can-i-use-docker-without-sudo) I executed `sudo gpasswd -a ${USER} docker`. 
+
+Patience was definitely required to get this running. I initially thought it would only take a weekend to get a Raspberry Pi cluster up and running with Kubernetes on Docker but the OSX networking 'features' and docker issues have slowed me down considerably. However I'm pleased to say I finally got Kubernetes running succesfully on two nodes yesterday and I hope to post soon on that.
