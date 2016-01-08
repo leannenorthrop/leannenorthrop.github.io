@@ -17,3 +17,11 @@ From the back the network cables are accessible and ethernet port lights viewabl
 <img src="{{site.baseurl}}/images/legoback.JPG" alt="Lego Enclosure Case for Bramble" style="max-width:480px" class="img-responsive center-block">
 
 Sadly even with no 'roof' the Pis run a little on the warm side so I suspect eventually I will have to build a proper enclosure but it's been fun to play with Lego again.
+
+<img src="{{site.baseurl}}/images/lightson.JPG" alt="An operating Bramble cluster with Lights On" style="max-width:480px" class="img-responsive center-block">
+
+Update 8/1/16: New cables arrived....
+
+<img src="{{site.baseurl}}/images/horizontal.JPG" alt="Upright Raspberry Pi 2 boards in Lego container" style="max-width:480px" class="img-responsive center-block">
+
+<img src="{{site.baseurl}}/images/newcablesin.JPG" alt="New shorter network cables" style="max-width:480px" class="img-responsive center-block">
