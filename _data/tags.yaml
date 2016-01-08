@@ -38,3 +38,5 @@
   name: Kubernetes
 - slug: alpine
   name: Alpine Linux
+- slug: java
+  name: Java
