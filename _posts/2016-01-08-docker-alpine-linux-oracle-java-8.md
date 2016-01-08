@@ -22,7 +22,7 @@ Based on the execellent work by the Hypriot team that supplies the [Alpine Linux
 
 <pre><code class="hljs">FROM hypriot/rpi-alpine-scratch
 
-MAINTAINER Leanne Northrop &amp;lt;lavender.flowerdew@gmail.com&amp;gt;
+MAINTAINER Leanne Northrop &lt;lavender.flowerdew@gmail.com&gt;
 
 LABEL Description="This image is used as base image for my explorations of running JAVA/Node applications on a Raspberry Pi 2 cluster." Version="0.1"
 
